@@ -1,0 +1,411 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>The Movies Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    /* font for header subtitle */
+    .subtitle-font {
+      font-family: "Arial Italic", Arial, sans-serif;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        display: flex;
+        gap: 1rem;
+        max-height: 900px; 
+      }
+      section.content {
+        flex: 1 1 auto;
+        overflow-y: auto;
+        max-height: 900px;
+        padding-right: 0.5rem;
+      }
+      aside {
+        flex: 0 0 18rem;
+        max-height: 900px;
+        overflow-y: auto;
+        position: sticky;
+        top: 0;
+        background: #f3f4f6; 
+        padding: 0.75rem;
+        border-radius: 0.25rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-black font-sans">
+  <div class="max-w-5xl mx-auto">
+    <!-- Main site header starts here -->
+    <header class="bg-black text-white text-center py-4">
+      <h1 class="text-lg font-normal">THE MOVIES HOME</h1>
+      <p class="subtitle-font text-xs mt-1">see / book / user / watch</p>
+    </header>
+    <!-- Site navigation bar -->
+    <nav
+      class="bg-yellow-400 text-black text-xs font-semibold flex justify-center space-x-20 py-2"
+    >
+      <a class="hover:underline" href="#">Watch it</a>
+      <a class="hover:underline" href="#">Download it</a>
+      <a class="hover:underline" href="#">Gallery</a>
+    </nav>
+    <!-- Main content area with sidebar -->
+    <main>
+      <!-- Main section on the left (scrolls if needed) -->
+      <section class="content space-y-3 px-2 md:px-0 mt-4">
+      <!-- Two large movie cards at the top -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <!-- Fight Club card -->
+        <article class="bg-white shadow flex flex-col">
+        <img
+          alt="Fight Club movie scene with two men facing each other in dim light"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_1.jpg"
+          style="height: 280px"
+        />
+        <div class="bg-yellow-400 text-black text-xs font-semibold px-2 py-1">
+          fight club
+        </div>
+        <p class="text-xs px-2 py-2 leading-tight flex-grow">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam, sed
+          dapibus, posuere, vehicula, nunc. Morbi euismod praesent
+          vestibulum cubilia curae; Molestie venenatis suscipit eros
+          viverra vitae laoreet. Ut et leo in, et leo in, et leo in.
+        </p>
+        </article>
+        <!-- Captain Jack Sparrow card -->
+        <article class="bg-white shadow flex flex-col">
+        <img
+          alt="Captain Jack Sparrow Pirates of the Caribbean movie poster with ship and pirate"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_2.jpg"
+          style="height: 280px"
+        />
+        <div class="bg-yellow-400 text-black text-xs font-semibold px-2 py-1">
+          captain jack sparrow
+        </div>
+        <p class="text-xs px-2 py-2 leading-tight flex-grow">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam, sed
+          dapibus, posuere, vehicula, nunc. Morbi euismod praesent
+          vestibulum cubilia curae; Molestie venenatis suscipit eros
+          viverra vitae laoreet. Ut et leo in, et leo in, et leo in.
+        </p>
+        </article>
+      </div>
+      <!-- Three smaller movie cards in the middle -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <!-- The Good The Bad and The Ugly card -->
+        <article class="bg-white shadow flex flex-col">
+        <img
+          alt="The Good The Bad and The Ugly movie scene with cowboy silhouettes"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_3.jpg"
+          style="height: 140px"
+        />
+        <div class="bg-yellow-400 text-black text-xs font-semibold px-2 py-1">
+          the good the bad and the ugly
+        </div>
+        <p class="text-xs px-2 py-2 leading-tight flex-grow">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam, sed
+          dapibus, posuere, vehicula, nunc. Morbi euismod praesent
+          vestibulum cubilia curae; Molestie venenatis suscipit eros
+          viverra vitae laoreet. Ut et leo in, et leo in, et leo in.
+        </p>
+        </article>
+        <!-- Sherlock Holmes card -->
+        <article class="bg-white shadow flex flex-col">
+        <img
+          alt="Sherlock Holmes movie portrait of man in coat and scarf"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_4.jpg"
+          style="height: 140px"
+        />
+        <div class="bg-yellow-400 text-black text-xs font-semibold px-2 py-1">
+          sherlock holmes
+        </div>
+        <p class="text-xs px-2 py-2 leading-tight flex-grow">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam, sed
+          dapibus, posuere, vehicula, nunc. Morbi euismod praesent
+          vestibulum cubilia curae; Molestie venenatis suscipit eros
+          viverra vitae laoreet. Ut et leo in, et leo in, et leo in.
+        </p>
+        </article>
+        <!-- The Joker card -->
+        <article class="bg-white shadow flex flex-col">
+        <img
+          alt="The Joker movie scene with man in blue lighting"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_6.jpg"
+          style="height: 140px"
+        />
+        <div class="bg-yellow-400 text-black text-xs font-semibold px-2 py-1">
+          the joker
+        </div>
+        <p class="text-xs px-2 py-2 leading-tight flex-grow">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam, sed
+          dapibus, posuere, vehicula, nunc. Morbi euismod praesent
+          vestibulum cubilia curae; Molestie venenatis suscipit eros
+          viverra vitae laoreet. Ut et leo in, et leo in, et leo in.
+        </p>
+        </article>
+      </div>
+      <!-- Big movie image row -->
+      <article class="bg-white shadow flex flex-col">
+        <img
+        alt="Mission Impossible movie scene with two men on motorbikes on mountain road"
+        class="w-full object-cover"
+        src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_7.jpg"
+        style="height: 440px"
+        />
+        <div class="bg-yellow-400 text-black text-xs font-semibold px-2 py-1">
+        mission impossible
+        </div>
+        <p class="text-xs px-2 py-2 leading-tight">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam, sed
+        dapibus, posuere, vehicula, nunc. Morbi euismod praesent vestibulum
+        cubilia curae; Molestie venenatis suscipit eros viverra vitae
+        laoreet. Ut et leo in, et leo in, et leo in.
+        </p>
+      </article>
+      <!-- "Watch Today" movies section -->
+      <section class="mt-8">
+        <h2 class="text-center font-bold mb-4">watch today</h2>
+        <!-- First row: image and info side by side -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
+        <img
+          alt="Baby Driver movie poster with characters and car on pink background"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_8.jpg"
+          style="height: 370px; width: 250px;"
+        />
+        <div
+          class="bg-black text-white p-4 flex flex-col justify-center text-xs leading-tight"
+        >
+          <h3 class="font-semibold mb-1">Baby Driver</h3>
+          <p class="mb-1">2017 1h 53 min Action 12 8.0 pg</p>
+          <p class="mb-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam, sed
+          ipsum. Phasellus id, dolor magna consectetur accumsan.
+          </p>
+          <a class="underline text-xs" href="#">read more</a>
+        </div>
+        </div>
+        <!-- Second row: reversed order on desktop -->
+        <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4 md:flex-row-reverse md:grid-flow-col-dense"
+        >
+        <div
+          class="bg-black text-white p-4 flex flex-col justify-center text-xs leading-tight order-2 md:order-1"
+        >
+          <h3 class="font-semibold mb-1">Baby Driver</h3>
+          <p class="mb-1">2017 1h 53 min Action 12 8.0 pg</p>
+          <p class="mb-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam, sed
+          ipsum. Phasellus id, dolor magna consectetur accumsan.
+          </p>
+          <a class="underline text-xs" href="#">read more</a>
+        </div>
+        <img
+          alt="Baby Driver movie illustration of two men in sketch style"
+          class="w-full object-cover order-1 md:order-2"
+          src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_9.jpg"
+          style="height: 320px"
+        />
+        </div>
+      </section>
+      <!-- Download Now section with review bar -->
+      <section class="mt-6 px-2 md:px-0">
+        <h2 class="text-center font-bold text-black text-lg mb-2" style="font-family: 'Arial Italic', Arial, sans-serif">
+        Download Now
+        </h2>
+
+        <!-- Download banner image -->
+        <img
+        src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_11.png"
+        alt="Download Banner"
+        class="w-full h-[180px] object-cover rounded"
+        />
+
+        <!-- Info bar with download, genre, avatars, and rating -->
+        <div class="flex flex-wrap items-center bg-white border border-gray-300 mt-1 text-xs shadow-sm">
+        <!-- Download icon and label -->
+        <div class="flex items-center px-3 py-2 border-r border-gray-300 gap-1 min-w-[90px] justify-center">
+          <i class="fas fa-cloud-download-alt text-black text-sm"></i>
+          <span class="text-black">Download</span>
+        </div>
+
+        <!-- Genre details -->
+        <div class="flex items-center px-4 py-2 border-r border-gray-300 gap-1 min-w-[200px] flex-wrap">
+          <span class="text-black font-medium">Genre:</span>
+          <span class="text-black">Adventure, Sci-Fi, Action</span>
+        </div>
+
+        <!-- User avatar images -->
+        <div class="flex items-center px-2 py-2 gap-[-6px] overflow-hidden">
+          <img src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_11.jpg" class="w-6 h-6 rounded-full border-2 border-white -ml-1" />
+          <img src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_12.jpg" class="w-6 h-6 rounded-full border-2 border-white -ml-1" />
+          <img src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_13.jpg" class="w-6 h-6 rounded-full border-2 border-white -ml-1" />
+          <img src="C:\Users\Home PC\Desktop\web dev\MOVIES\images\img_14.jpg" class="w-6 h-6 rounded-full border-2 border-white -ml-1" />
+          <img src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\img_15.jpg" class="w-6 h-6 rounded-full border-2 border-white -ml-1" />
+        </div>
+
+        <!-- IMDb rating badge -->
+        <div class="ml-auto bg-yellow-400 text-black font-bold text-sm px-4 py-2 flex items-center justify-center shadow rating-badge">
+          8.7
+          <span class="ml-1 text-[10px] font-normal">IMDb rating</span>
+        </div>
+        </div>
+      </section>
+
+      <!-- Movies Gallery grid section -->
+      <section class="mt-6">
+        <h2 class="text-center font-bold mb-3">Movies Gallery</h2>
+        <div class="grid grid-cols-3 gap-1">
+        <img
+          alt="Movie gallery image 1 showing a man in coat in dark room"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_1.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 2 showing a man with long hair in forest"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_2.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 3 showing a man in suit looking serious"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_3.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 4 showing a man with gun in desert"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_4.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 5 showing two men talking in police station"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_5.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 6 showing a boxer in ring with gloves"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_6.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 7 showing a man in prison yard"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_7.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 8 showing a pirate with red bandana"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_8.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 9 showing a white ball with red handprint"
+          class="w-full object-cover"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_9.jpg"
+          style="height: 150px"
+        />
+        <img
+          alt="Movie gallery image 10 showing close up of man with hand near face"
+          class="w-full object-cover col-span-3"
+          src="C:\Users\Home PC\Desktop/web dev\MOVIES\images\gallery_10.jpg"
+          style="height: 150px"
+        />
+        </div>
+      </section>
+      </section>
+      <!-- Sidebar with lists is on the right -->
+      
+<aside class="bg-white md:block w-72 space-y-4 ml-4">
+  
+  <div class="bg-gray-100 rounded shadow p-3 text-xs">
+    <h2 class="font-semibold border-b pb-1 mb-2">Top Rated Movies</h2>
+    <ul class="list-disc list-inside space-y-1">
+      <li>The Excalibur</li>
+      <li>12 Angry Men</li>
+      <li>The Dark Knight</li>
+    </ul>
+  </div>
+
+  
+  <div class="bg-gray-100 rounded shadow p-3 text-xs">
+    <h2 class="font-semibold border-b pb-1 mb-2">Great Actors</h2>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Al Pacino</li>
+      <li>Robert De Niro</li>
+      <li>Jack Nicholson</li>
+      <li>Leonardo DiCaprio</li>
+      <li>Brad Pitt</li>
+    </ul>
+  </div>
+
+  
+  <div class="bg-gray-100 rounded shadow p-3 text-xs">
+    <h2 class="font-semibold border-b pb-1 mb-2">Upcoming Movies</h2>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Deadpool 2</li>
+      <li>Venom</li>
+    </ul>
+  </div>
+
+  
+  <div class="bg-gray-100 rounded shadow p-3 text-xs">
+    <h2 class="font-semibold border-b pb-1 mb-2">Best Directors</h2>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Stanley Kubrick</li>
+      <li>Alfred Hitchcock</li>
+      <li>Steven Spielberg</li>
+      <li>Martin Scorsese</li>
+      <li>Quentin Tarantino</li>
+    </ul>
+  </div>
+
+  
+  <div class="bg-gray-100 rounded shadow p-3 text-xs">
+    <h2 class="font-semibold border-b pb-1 mb-2">Categories</h2>
+    <ul class="list-disc list-inside space-y-1">
+      <li>Action</li>
+      <li>Drama</li>
+      <li>Horror</li>
+      <li>Romance</li>
+      <li>Adventure</li>
+    </ul>
+  </div>
+
+  
+  <div class="bg-gray-100 rounded shadow p-3 text-xs">
+    <h2 class="font-semibold border-b pb-1 mb-2">Top Ten This Week</h2>
+    <ol class="list-decimal list-inside space-y-1">
+      <li>City of Ghosts</li>
+      <li>Alien Covenant</li>
+      <li>Super Dark Times</li>
+      <li>The Equalizer</li>
+      <li>Atomic Blonde</li>
+    </ol>
+  </div>
+</aside>
+    </main>
+    
+    <footer class="text-center text-[9px] text-black bg-white py-2 mt-6">
+      all rights are reserved Ahmed Sadek | UDEMY
+    </footer>
+  </div>
+</body>
+</html>
